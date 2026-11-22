@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Şampiyon Kardeşler Spor Kulübü | Mamak / Ankara</title>
+  <meta
+    name="description"
+    content="Şampiyon Kardeşler Spor Kulübü - Mamak / Ankara. Cebrail Bülbül ve Mikail Bülbül eşliğinde Boks, Muay Thai, Wushu Kung-Fu (Sanda) ve Kick Boks eğitimleri."
+  />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            canvas: '#FAFAFA',
+            surface: '#FFFFFF',
+            stoneSurface: '#F4F4F5',
+            ink: '#18181B',
+            inkHover: '#27272A',
+            muted: '#52525B',
+            borderHairline: '#E4E4E7',
+            bronze: '#9A7B4F',
+            bronzeDark: '#82663F',
+          },
+          fontFamily: {
+            display: ['Plus Jakarta Sans', 'sans-serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    /* Pürüzsüz Kırık Beyaz Zemin ve Temel Tipografi */
+    html,
+    body {
+      background-color: #FAFAFA;
+      background-image: none;
+      color: #18181B;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    .font-display {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* Tüm SVG İkonlarının Orantılı ve Taşmasız Kalmasını Garantile */
+    svg {
+      flex-shrink: 0;
+      max-width: 100%;
+    }
+
+    /* Açılır Menü (Select) Özel Oku */
+    .clean-select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2352525B' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.9rem center;
+      background-size: 1rem 1rem;
+    }
+
+    /* Lüks ve Yumuşak Kart Derinliği */
+    .soft-card {
+      box-shadow: 0 1px 2px rgba(24, 24, 27, 0.03), 0 6px 20px rgba(24, 24, 27, 0.025);
+    }
+
+    /* İnce Kaydırma Çubuğu */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FAFAFA;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #D4D4D8;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #9A7B4F;
+    }
+  </style>
+</head>
+<body class="bg-canvas text-ink antialiased selection:bg-ink selection:text-surface">
+
+  <!-- 1. ÜST MENÜ (Yapışkan Beyaz / Cam Efektli Navbar) -->
+  <header class="sticky top-0 z-50 w-full border-b border-borderHairline bg-surface/90 backdrop-blur-md">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
+      <!-- Sol: Kulüp Adı ve Alt Başlığı -->
+      <a href="#top" class="group flex items-center gap-3 focus:outline-none">
+        <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-borderHairline bg-stoneSurface font-display text-xs font-bold tracking-wider text-ink transition-colors group-hover:border-bronze group-hover:text-bronze">
+          ŞK
+        </span>
+        <div class="flex flex-col">
+          <span class="font-display text-sm font-bold leading-tight tracking-tight text-ink sm:text-base">
+            ŞAMPİYON KARDEŞLER
+          </span>
+          <span class="mt-0.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-bronze">
+            SPOR KULÜBÜ
+          </span>
+        </div>
+      </a>
+
+      <!-- Orta: Masaüstü Navigasyon Linkleri -->
+      <nav class="hidden items-center gap-8 md:flex" aria-label="Ana Menü">
+        <a href="#branslar" class="text-sm font-medium text-muted transition-colors hover:text-ink">
+          Branşlar
+        </a>
+        <a href="#egitmenler" class="text-sm font-medium text-muted transition-colors hover:text-ink">
+          Eğitmenler
+        </a>
+        <a href="#ucretler" class="text-sm font-medium text-muted transition-colors hover:text-ink">
+          Ücretler
+        </a>
+        <a href="#iletisim" class="text-sm font-medium text-muted transition-colors hover:text-ink">
+          İletişim &amp; Kayıt
+        </a>
+      </nav>
+
+      <!-- Sağ: Hemen Başvur Butonu ve Mobil Hamburger Menü -->
+      <div class="flex items-center gap-3">
+        <a
+          href="#kayit-formu"
+          class="hidden rounded-lg bg-ink px-4 py-2.5 text-xs font-semibold tracking-wide text-surface transition-colors hover:bg-inkHover sm:inline-flex"
+        >
+          Hemen Başvur
+        </a>
+
+        <button
+          id="mobile-menu-btn"
+          type="button"
+          aria-label="Menüyü Aç veya Kapat"
+          aria-expanded="false"
+          class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-borderHairline bg-surface text-ink transition-colors hover:bg-stoneSurface md:hidden"
+        >
+          <svg id="menu-icon-open" width="20" height="20" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="7" x2="20" y2="7"></line>
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="17" x2="20" y2="17"></line>
+          </svg>
+          <svg id="menu-icon-close" width="20" height="20" class="hidden h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobil Açılır Menü -->
+    <div id="mobile-menu" class="hidden border-t border-borderHairline bg-surface px-5 py-4 md:hidden">
+      <nav class="flex flex-col space-y-2" aria-label="Mobil Menü">
+        <a href="#branslar" class="mobile-nav-link rounded-lg px-3 py-2.5 text-sm font-medium text-muted transition-colors hover:bg-stoneSurface hover:text-ink">
+          Branşlar
+        </a>
+        <a href="#egitmenler" class="mobile-nav-link rounded-lg px-3 py-2.5 text-sm font-medium text-muted transition-colors hover:bg-stoneSurface hover:text-ink">
+          Eğitmenler
+        </a>
+        <a href="#ucretler" class="mobile-nav-link rounded-lg px-3 py-2.5 text-sm font-medium text-muted transition-colors hover:bg-stoneSurface hover:text-ink">
+          Ücretler
+        </a>
+        <a href="#iletisim" class="mobile-nav-link rounded-lg px-3 py-2.5 text-sm font-medium text-muted transition-colors hover:bg-stoneSurface hover:text-ink">
+          İletişim &amp; Kayıt
+        </a>
+        <div class="pt-2">
+          <a
+            href="#kayit-formu"
+            class="mobile-nav-link flex w-full items-center justify-center rounded-lg bg-ink px-4 py-3 text-xs font-semibold tracking-wide text-surface transition-colors hover:bg-inkHover"
+          >
+            Hemen Başvur
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- 2. HERO BÖLÜMÜ (Tamamen Pürüzsüz #FAFAFA Arka Plan) -->
+    <section class="border-b border-borderHairline bg-canvas py-20 sm:py-28">
+      <div class="mx-auto max-w-6xl px-5 sm:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <!-- Konum Etiketi -->
+          <div class="inline-flex items-center gap-2 rounded-full border border-borderHairline bg-surface px-4 py-1.5">
+            <span class="h-1.5 w-1.5 rounded-full bg-bronze"></span>
+            <span class="text-xs font-semibold tracking-wide text-bronze">
+              Mamak / Ankara
+            </span>
+          </div>
+
+          <!-- Ana Başlık -->
+          <h1 class="mt-6 font-display text-4xl font-bold leading-[1.15] tracking-tight text-ink sm:text-5xl lg:text-[54px]">
+            Disiplin, Teknik ve Güç Bir Arada
+          </h1>
+
+          <!-- Kısa Tanıtım Metni -->
+          <p class="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
+            Şampiyon Kardeşler Spor Kulübü’nde Boks, Muay Thai, Wushu Kung-Fu (Sanda) ve Kick Boks branşlarında deneyimli eğitmenler eşliğinde güvenli ve sistemli antrenman deneyimi.
+          </p>
+
+          <!-- Eylem Butonları -->
+          <div class="mt-9 flex flex-col items-center justify-center gap-3.5 sm:flex-row">
+            <a
+              href="#kayit-formu"
+              class="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-ink px-7 py-3.5 text-sm font-semibold text-surface transition-colors duration-200 hover:bg-inkHover sm:w-auto"
+            >
+              <span>Ön Kayıt Yap</span>
+              <svg width="16" height="16" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <a
+              href="#branslar"
+              class="inline-flex w-full items-center justify-center rounded-lg border border-borderHairline bg-surface px-7 py-3.5 text-sm font-medium text-ink transition-colors duration-200 hover:border-ink/40 hover:bg-stoneSurface sm:w-auto"
+            >
+              Branşları İncele
+            </a>
+          </div>
+        </div>
+
+        <!-- 3 Sade İstatistik / Özellik Kutusu -->
+        <div class="mt-16 grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-6">
+          <div class="soft-card rounded-xl border border-borderHairline bg-surface p-6 text-center">
+            <p class="font-display text-lg font-bold text-ink">4 Farklı Branş</p>
+            <p class="mt-1.5 text-sm text-muted">Boks, Muay Thai, Wushu Sanda, Kick Boks</p>
+          </div>
+
+          <div class="soft-card rounded-xl border border-borderHairline bg-surface p-6 text-center">
+            <p class="font-display text-lg font-bold text-ink">3 Eğitim Modeli</p>
+            <p class="mt-1.5 text-sm text-muted">Toplu Ders, Birebir Ders, Danışmanlık</p>
+          </div>
+
+          <div class="soft-card rounded-xl border border-borderHairline bg-surface p-6 text-center">
+            <p class="font-display text-lg font-bold text-ink">Uzman Kadro</p>
+            <p class="mt-1.5 text-sm text-muted">Cebrail Bülbül &amp; Mikail Bülbül</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. BRANŞLARIMIZ (01 - 04) -->
+    <section id="branslar" class="border-b border-borderHairline bg-canvas py-20 sm:py-24">
+      <div class="mx-auto max-w-6xl px-5 sm:px-8">
+        <!-- Bölüm Başlığı -->
+        <div class="flex flex-col justify-between gap-4 border-b border-borderHairline pb-7 md:flex-row md:items-end">
+          <div>
+            <span class="text-xs font-semibold uppercase tracking-[0.18em] text-bronze">
+              ANTRENMAN PROGRAMLARI
+            </span>
+            <h2 class="mt-2 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl">
+              Branşlarımız
+            </h2>
+          </div>
+          <p class="max-w-md text-sm leading-relaxed text-muted">
+            Her seviyeye uygun, teknik temel ve fiziksel gelişimi merkeze alan disiplinli antrenman programları.
+          </p>
+        </div>
+
+        <!-- 4 Sütunlu Temiz Kartlar -->
+        <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- 01 Boks -->
+          <article class="soft-card flex flex-col justify-between rounded-xl border border-borderHairline bg-surface p-7 transition-all duration-200 hover:border-bronze/60">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="font-display text-sm font-bold tracking-widest text-bronze">
+                  01
+                </span>
+                <span class="h-px w-8 bg-borderHairline"></span>
+              </div>
+              <h3 class="mt-5 font-display text-xl font-bold text-ink">
+                Boks
+              </h3>
+              <p class="mt-3 text-sm leading-relaxed text-muted">
+                Temel gard duruşu, ayak oyunları, yumruk kombinasyonları ve dayanıklılık odaklı teknik boks eğitimi.
+              </p>
+            </div>
+
+            <div class="mt-8 border-t border-borderHairline pt-4">
+              <button
+                type="button"
+                onclick="selectBranchAndScroll('Boks')"
+                class="inline-flex items-center gap-1.5 text-sm font-semibold text-ink transition-colors hover:text-bronze"
+              >
+                <span>Branşı Seç →</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- 02 Muay Thai -->
+          <article class="soft-card flex flex-col justify-between rounded-xl border border-borderHairline bg-surface p-7 transition-all duration-200 hover:border-bronze/60">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="font-display text-sm font-bold tracking-widest text-bronze">
+                  02
+                </span>
+                <span class="h-px w-8 bg-borderHairline"></span>
+              </div>
+              <h3 class="mt-5 font-display text-xl font-bold text-ink">
+                Muay Thai
+              </h3>
+              <p class="mt-3 text-sm leading-relaxed text-muted">
+                Yumruk, tekme, diz ve dirsek tekniklerini birleştiren yüksek tempolu geleneksel Tayland boksu programı.
+              </p>
+            </div>
+
+            <div class="mt-8 border-t border-borderHairline pt-4">
+              <button
+                type="button"
+                onclick="selectBranchAndScroll('Muay Thai')"
+                class="inline-flex items-center gap-1.5 text-sm font-semibold text-ink transition-colors hover:text-bronze"
+              >
+                <span>Branşı Seç →</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- 03 Wushu Kung-Fu (Sanda) -->
+          <article class="soft-card flex flex-col justify-between rounded-xl border border-borderHairline bg-surface p-7 transition-all duration-200 hover:border-bronze/60">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="font-display text-sm font-bold tracking-widest text-bronze">
+                  03
+                </span>
+                <span class="h-px w-8 bg-borderHairline"></span>
+              </div>
+              <h3 class="mt-5 font-display text-xl font-bold text-ink">
+                Wushu Kung-Fu (Sanda)
+              </h3>
+              <p class="mt-3 text-sm leading-relaxed text-muted">
+                Vuruş ve denge bozma tekniklerini içeren modern Çin savunma ve mücadele sporu eğitimi.
+              </p>
+            </div>
+
+            <div class="mt-8 border-t border-borderHairline pt-4">
+              <button
+                type="button"
+                onclick="selectBranchAndScroll('Wushu Kung-Fu (Sanda)')"
+                class="inline-flex items-center gap-1.5 text-sm font-semibold text-ink transition-colors hover:text-bronze"
+              >
+                <span>Branşı Seç →</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- 04 Kick Boks -->
+          <article class="soft-card flex flex-col justify-between rounded-xl border border-borderHairline bg-surface p-7 transition-all duration-200 hover:border-bronze/60">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="font-display text-sm font-bold tracking-widest text-bronze">
+                  04
+                </span>
+                <span class="h-px w-8 bg-borderHairline"></span>
+              </div>
+              <h3 class="mt-5 font-display text-xl font-bold text-ink">
+                Kick Boks
+              </h3>
+              <p class="mt-3 text-sm leading-relaxed text-muted">
+                Hız, esneklik, refleks ve yüksek kondisyon kazandıran dinamik mücadele antrenmanları.
+              </p>
+            </div>
+
+            <div class="mt-8 border-t border-borderHairline pt-4">
+              <button
+                type="button"
+                onclick="selectBranchAndScroll('Kick Boks')"
+                class="inline-flex items-center gap-1.5 text-sm font-semibold text-ink transition-colors hover:text-bronze"
+              >
+                <span>Branşı Seç →</span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. EĞİTMENLERİMİZ -->
+    <section id="egitmenler" class="border-b border-borderHairline bg-canvas py-20 sm:py-24">
+      <div class="mx-auto max-w-6xl px-5 sm:px-8">
+        <!-- Bölüm Başlığı -->
+        <div class="flex flex-col justify-between gap-4 border-b border-borderHairline pb-7 md:flex-row md:items-end">
+          <div>
+            <span class="text-xs font-semibold uppercase tracking-[0.18em] text-bronze">
+              ANTRENÖR KADROSU
+            </span>
+            <h2 class="mt-2 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl">
+              Eğitmenlerimiz
+            </h2>
+          </div>
+          <p class="max-w-md text-sm leading-relaxed text-muted">
+            Kurucu antrenörlerimizle telefon numarasını kopyalayarak veya doğrudan WhatsApp üzerinden iletişime geçebilirsiniz.
+          </p>
+        </div>
+
+        <!-- 2 Sütunlu Zarif Kartlar -->
+        <div class="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-2">
+          <!-- Kart 1: Cebrail Bülbül -->
+          <div class="soft-card flex flex-col justify-between rounded-xl border border-borderHairline bg-surface p-8 transition-colors duration-200 hover:border-bronze/60">
+            <div>
+              <div class="flex items-start justify-between gap-4">
+                <!-- CB Monogram -->
+                <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl border border-borderHairline bg-stoneSurface font-display text-lg font-bold tracking-wider text-ink">
+                  CB
+                </div>
+                <span class="rounded-full border border-borderHairline bg-stoneSurface px-3.5 py-1 text-xs font-medium text-muted">
+                  Kurucu Antrenör
+                </span>
+              </div>
+
+              <h3 class="mt-6 font-display text-2xl font-bold text-ink">
+                Cebrail Bülbül
+              </h3>
+              <p class="mt-1 text-sm font-medium text-bronze">
+                Kurucu Antrenör
+              </p>
+
+              <p class="mt-4 text-sm leading-relaxed text-muted">
+                Boks, Muay Thai, Wushu Kung-Fu (Sanda) ve Kick Boks branşlarında toplu dersler, birebir özel ders ve sporcu danışmanlığı.
+              </p>
+
+              <!-- Telefon Numarası -->
+              <div class="mt-6 flex items-center gap-2.5 border-t border-borderHairline pt-5 text-sm font-medium text-ink">
+                <svg width="16" height="16" class="h-4 w-4 text-bronze" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span class="tabular-nums">+90 549 913 06 06</span>
+              </div>
+            </div>
+
+            <!-- Yan Yana İki Buton: ARA & WHATSAPP -->
+            <div class="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-2">
+              <button
+                type="button"
+                onclick="copyPhoneNumber('+90 549 913 06 06', 'Cebrail Bülbül', this)"
+                class="inline-flex items-center justify-center gap-2 rounded-lg border border-borderHairline bg-stoneSurface px-4 py-3 text-xs font-semibold tracking-wide text-ink transition-colors duration-200 hover:border-ink/40 hover:bg-surface"
+              >
+                <svg width="16" height="16" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span class="btn-label">ARA</span>
+              </button>
+
+              <button
+                type="button"
+                onclick="openDirectWhatsApp('cebrail')"
+                class="inline-flex items-center justify-center gap-2 rounded-lg bg-ink px-4 py-3 text-xs font-semibold tracking-wide text-surface transition-colors duration-200 hover:bg-inkHover"
+              >
+                <svg width="16" height="16" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+                <span>WHATSAPP</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Kart 2: Mikail Bülbül -->
+          <div class="soft-card flex flex-col justify-between rounded-xl border border-borderHairline bg-surface p-8 transition-colors duration-200 hover:border-bronze/60">
+            <div>
+              <div class="flex items-start justify-between gap-4">
+                <!-- MB Monogram -->
+                <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl border border-borderHairline bg-stoneSurface font-display text-lg font-bold tracking-wider text-ink">
+                  MB
+                </div>
+                <span class="rounded-full border border-borderHairline bg-stoneSurface px-3.5 py-1 text-xs font-medium text-muted">
+                  Kurucu Antrenör
+                </span>
+              </div>
+
+              <h3 class="mt-6 font-display text-2xl font-bold text-ink">
+                Mikail Bülbül
+              </h3>
+              <p class="mt-1 text-sm font-medium text-bronze">
+                Kurucu Antrenör
+              </p>
+
+              <p class="mt-4 text-sm leading-relaxed text-muted">
+                Boks, Muay Thai, Wushu Kung-Fu (Sanda) ve Kick Boks branşlarında toplu dersler, birebir özel ders ve sporcu danışmanlığı.
+              </p>
+
+              <!-- Telefon Numarası -->
+              <div class="mt-6 flex items-center gap-2.5 border-t border-borderHairline pt-5 text-sm font-medium text-ink">
+                <svg width="16" height="16" class="h-4 w-4 text-bronze" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span class="tabular-nums">+90 531 200 46 46</span>
+              </div>
+            </div>
+
+            <!-- Yan Yana İki Buton: ARA & WHATSAPP -->
+            <div class="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-2">
+              <button
+                type="button"
+                onclick="copyPhoneNumber('+90 531 200 46 46', 'Mikail Bülbül', this)"
+                class="inline-flex items-center justify-center gap-2 rounded-lg border border-borderHairline bg-stoneSurface px-4 py-3 text-xs font-semibold tracking-wide text-ink transition-colors duration-200 hover:border-ink/40 hover:bg-surface"
+              >
+                <svg width="16" height="16" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span class="btn-label">ARA</span>
+              </button>
+
+              <button
+                type="button"
+                onclick="openDirectWhatsApp('mikail')"
+                class="inline-flex items-center justify-center gap-2 rounded-lg bg-ink px-4 py-3 text-xs font-semibold tracking-wide text-surface transition-colors duration-200 hover:bg-inkHover"
+              >
+                <svg width="16" height="16" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+                <span>WHATSAPP</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. HİZMETLER & ÜCRETLENDİRME -->
+    <section id="ucretler" class="border-b border-borderHairline bg-canvas py-20 sm:py-24">
+      <div class="mx-auto max-w-6xl px-5 sm:px-8">
+        <!-- Bölüm Başlığı -->
+        <div class="flex flex-col justify-between gap-4 border-b border-borderHairline pb-7 md:flex-row md:items-end">
+          <div>
+            <span class="text-xs font-semibold uppercase tracking-[0.18em] text-bronze">
+              ŞEFFAF FİYATLANDIRMA
+            </span>
+            <h2 class="mt-2 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl">
+              Hizmetler &amp; Ücretlendirme
+            </h2>
+          </div>
+          <p class="max-w-md text-sm leading-relaxed text-muted">
+            Hedeflerinize uygun eğitim modelini seçin ve tek tıkla ön kayıt formuna aktarın.
+          </p>
+        </div>
+
+        <!-- 3 Sütunlu Sade Fiyat Kartları -->
+        <div class="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-3">
+          <!-- Paket 1 (Öne Çıkarılmış): Toplu Dersler -->
+          <div class="soft-card relative flex flex-col justify-between rounded-xl border-2 border-bronze bg-surface p-8">
+            <div class="absolute -top-3.5 left-7">
+              <span class="inline-block rounded-full bg-bronze px-3.5 py-1 text-[11px] font-semibold tracking-wide text-surface">
+                En Çok Tercih Edilen
+              </span>
+            </div>
+
+            <div>
+              <h3 class="mt-2 font-display text-xl font-bold text-ink">
+                Toplu Dersler
+              </h3>
+              <p class="mt-2 text-sm leading-relaxed text-muted">
+                Grup motivasyonuyla düzenli haftalık antrenman programı.
+              </p>
+
+              <div class="mt-6 flex items-baseline gap-1.5 border-b border-borderHairline pb-6">
+                <span class="font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl">
+                  2.000 TL
+                </span>
+                <span class="text-sm font-medium text-muted">/ Aylık</span>
+              </div>
+
+              <ul class="mt-6 space-y-3 text-sm text-ink/90">
+                <li class="flex items-start gap-2.5">
+                  <svg width="16" height="16" class="mt-0.5 h-4 w-4 text-bronze" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Seçilen branşta düzenli grup seansları</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg width="16" height="16" class="mt-0.5 h-4 w-4 text-bronze" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Teknik gelişim, kondisyon ve lapa çalışmaları</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg width="16" height="16" class="mt-0.5 h-4 w-4 text-bronze" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Başlangıç ve ileri seviye uyumlu antrenman</span>
+                </li>
+              </ul>
+            </div>
+
+            <button
+              type="button"
+              onclick="selectServiceAndScroll('Toplu Dersler - 2.000 TL / Aylık')"
+              class="mt-8 inline-flex w-full items-center justify-center rounded-lg bg-ink px-5 py-3.5 text-sm font-semibold text-surface transition-colors duration-200 hover:bg-inkHover"
+            >
+              Seç ve Başvur
+            </button>
+          </div>
+
+          <!-- Paket 2: Birebir Ders -->
+          <div class="soft-card flex flex-col justify-between rounded-xl border border-borderHairline bg-surface p-8 transition-colors duration-200 hover:border-bronze/60">
+            <div>
+              <h3 class="mt-2 font-display text-xl font-bold text-ink">
+                Birebir Ders
+              </h3>
+              <p class="mt-2 text-sm leading-relaxed text-muted">
+                Seviyenize ve hedeflerinize özel bireysel teknik ve kondisyon çalışması.
+              </p>
+
+              <div class="mt-6 flex items-baseline gap-1.5 border-b border-borderHairline pb-6">
+                <span class="font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl">
+                  200 TL
+                </span>
+                <span class="text-sm font-medium text-muted">/ Ders</span>
+              </div>
+
+              <ul class="mt-6 space-y-3 text-sm text-ink/90">
+                <li class="flex items-start gap-2.5">
+                  <svg width="16" height="16" class="mt-0.5 h-4 w-4 text-bronze" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Eğitmenle birebir özel seans planlaması</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg width="16" height="16" class="mt-0.5 h-4 w-4 text-bronze" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Hızlı teknik ilerleme ve kişisel geri bildirim</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg width="16" height="16" class="mt-0.5 h-4 w-4 text-bronze" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Birebir lapa, savunma ve performans çalışması</span>
+                </li>
+              </ul>
+            </div>
+
+            <button
+              type="button"
+              onclick="selectServiceAndScroll('Birebir Ders - 200 TL / Ders')"
+              class="mt-8 inline-flex w-full items-center justify-center rounded-lg border border-borderHairline bg-stoneSurface px-5 py-3.5 text-sm font-semibold text-ink transition-colors duration-200 hover:border-ink/40 hover:bg-surface"
+            >
+              Seç ve Başvur
+            </button>
+          </div>
+
+          <!-- Paket 3: Danışmanlık -->
+          <div class="soft-card flex flex-col justify-between rounded-xl border border-borderHairline bg-surface p-8 transition-colors duration-200 hover:border-bronze/60">
+            <div>
+              <h3 class="mt-2 font-display text-xl font-bold text-ink">
+                Danışmanlık
+              </h3>
+              <p class="mt-2 text-sm leading-relaxed text-muted">
+                Branş seçimi, antrenman planlaması ve gelişim analizi görüşmesi.
+              </p>
+
+              <div class="mt-6 flex items-baseline gap-1.5 border-b border-borderHairline pb-6">
+                <span class="font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl">
+                  500 TL
+                </span>
+              </div>
+
+              <ul class="mt-6 space-y-3 text-sm text-ink/90">
+                <li class="flex items-start gap-2.5">
+                  <svg width="16" height="16" class="mt-0.5 h-4 w-4 text-bronze" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Fiziksel uygunluk ve branş yönlendirme analizi</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg width="16" height="16" class="mt-0.5 h-4 w-4 text-bronze" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Kişisel antrenman takvimi ve yol haritası</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg width="16" height="16" class="mt-0.5 h-4 w-4 text-bronze" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Kurucu eğitmenlerle birebir değerlendirme</span>
+                </li>
+              </ul>
+            </div>
+
+            <button
+              type="button"
+              onclick="selectServiceAndScroll('Danışmanlık - 500 TL')"
+              class="mt-8 inline-flex w-full items-center justify-center rounded-lg border border-borderHairline bg-stoneSurface px-5 py-3.5 text-sm font-semibold text-ink transition-colors duration-200 hover:border-ink/40 hover:bg-surface"
+            >
+              Seç ve Başvur
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. İLETİŞİM, KONUM & WHATSAPP KAYIT FORMU -->
+    <section id="iletisim" class="bg-canvas py-20 sm:py-24">
+      <div class="mx-auto max-w-6xl px-5 sm:px-8">
+        <div class="grid grid-cols-1 gap-10 lg:grid-cols-12">
+          <!-- Sol Sütun: Adres, Telefonlar ve Aydınlık Harita -->
+          <div class="flex flex-col justify-between gap-6 lg:col-span-5">
+            <!-- Adres ve Telefon Bilgileri Kartı -->
+            <div class="soft-card rounded-xl border border-borderHairline bg-surface p-7 sm:p-8">
+              <span class="text-xs font-semibold uppercase tracking-[0.18em] text-bronze">
+                İLETİŞİM &amp; KONUM
+              </span>
+              <h2 class="mt-2 font-display text-2xl font-bold text-ink">
+                Kulüp Adresi
+              </h2>
+
+              <!-- Açık Adres ve Kopyala Butonu -->
+              <div class="mt-5 border-b border-borderHairline pb-6">
+                <p id="club-address-text" class="text-sm leading-relaxed text-ink">
+                  Kutlu Mahallesi, Dereboyu Caddesi No: 83 D: 11 (No: 83/B), Mamak / Ankara
+                </p>
+
+                <button
+                  type="button"
+                  onclick="copyAddress()"
+                  class="mt-4 inline-flex items-center gap-2 rounded-lg border border-borderHairline bg-stoneSurface px-4 py-2.5 text-xs font-semibold text-ink transition-colors hover:border-ink/40 hover:bg-surface"
+                >
+                  <svg width="16" height="16" class="h-4 w-4 text-bronze" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span>Adresi Kopyala</span>
+                </button>
+              </div>
+
+              <!-- Eğitmen Telefonları -->
+              <div class="mt-5 space-y-3">
+                <p class="text-xs font-semibold uppercase tracking-wider text-muted">
+                  Eğitmen Telefonları
+                </p>
+
+                <div class="flex items-center justify-between rounded-lg border border-borderHairline bg-canvas px-4 py-3">
+                  <div>
+                    <p class="text-xs text-muted">Cebrail Bülbül</p>
+                    <p class="mt-0.5 text-sm font-semibold text-ink tabular-nums">+90 549 913 06 06</p>
+                  </div>
+                  <button
+                    type="button"
+                    onclick="copyPhoneNumber('+90 549 913 06 06', 'Cebrail Bülbül')"
+                    class="rounded-md border border-borderHairline bg-surface px-3 py-1.5 text-xs font-medium text-ink transition-colors hover:border-ink/40"
+                  >
+                    Kopyala
+                  </button>
+                </div>
+
+                <div class="flex items-center justify-between rounded-lg border border-borderHairline bg-canvas px-4 py-3">
+                  <div>
+                    <p class="text-xs text-muted">Mikail Bülbül</p>
+                    <p class="mt-0.5 text-sm font-semibold text-ink tabular-nums">+90 531 200 46 46</p>
+                  </div>
+                  <button
+                    type="button"
+                    onclick="copyPhoneNumber('+90 531 200 46 46', 'Mikail Bülbül')"
+                    class="rounded-md border border-borderHairline bg-surface px-3 py-1.5 text-xs font-medium text-ink transition-colors hover:border-ink/40"
+                  >
+                    Kopyala
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Aydınlık Gömülü Google Haritası Iframe -->
+            <div class="soft-card overflow-hidden rounded-xl border border-borderHairline bg-surface">
+              <div class="h-64 w-full sm:h-72">
+                <iframe
+                  title="Şampiyon Kardeşler Spor Kulübü Harita Konumu - Mamak / Ankara"
+                  src="https://maps.google.com/maps?q=Kutlu%20Mahallesi%2C%20Dereboyu%20Caddesi%20No%3A%2083%2C%20Mamak%20%2F%20Ankara&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                  class="h-full w-full border-0"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sağ Sütun: WhatsApp Kayıt Formu -->
+          <div id="kayit-formu" class="lg:col-span-7">
+            <div class="soft-card rounded-xl border border-borderHairline bg-surface p-7 sm:p-10">
+              <span class="text-xs font-semibold uppercase tracking-[0.18em] text-bronze">
+                ÖN KAYIT BAŞVURUSU
+              </span>
+              <h2 class="mt-2 font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl">
+                WhatsApp Kayıt Formu
+              </h2>
+              <p class="mt-2 text-sm leading-relaxed text-muted">
+                Bilgilerinizi doldurduğunuzda seçtiğiniz eğitmenin WhatsApp sohbet ekranı mesajınız hazır yazılı olarak açılır.
+              </p>
+
+              <form id="whatsapp-form" class="mt-7 space-y-5" novalidate>
+                <!-- Ad Soyad & Telefon Numarası -->
+                <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                  <div>
+                    <label for="full-name" class="block text-xs font-semibold uppercase tracking-wider text-ink">
+                      Ad Soyad <span class="text-bronze">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="full-name"
+                      name="fullName"
+                      placeholder="Adınız ve Soyadınız"
+                      required
+                      class="mt-2 w-full rounded-lg border border-borderHairline bg-canvas px-4 py-3 text-sm text-ink placeholder-muted/60 transition-colors focus:border-ink focus:bg-surface focus:outline-none"
+                    />
+                    <p id="name-error" class="mt-1.5 hidden text-xs font-medium text-red-600">
+                      Lütfen adınızı ve soyadınızı giriniz.
+                    </p>
+                  </div>
+
+                  <div>
+                    <label for="user-phone" class="block text-xs font-semibold uppercase tracking-wider text-ink">
+                      Telefon Numarası
+                    </label>
+                    <div class="relative mt-2">
+                      <input
+                        type="tel"
+                        id="user-phone"
+                        name="userPhone"
+                        inputmode="tel"
+                        autocomplete="tel"
+                        placeholder="+90 5XX XXX XX XX"
+                        class="w-full rounded-lg border border-borderHairline bg-canvas py-3 pl-3.5 pr-[118px] text-sm tabular-nums text-ink placeholder-muted/60 transition-colors focus:border-ink focus:bg-surface focus:outline-none"
+                      />
+                      <span
+                        id="country-badge"
+                        title="Algılanan Ülke ve Ülke Kodu"
+                        class="pointer-events-none absolute right-2 top-1/2 inline-flex max-w-[108px] -translate-y-1/2 items-center truncate rounded-md border border-borderHairline bg-stoneSurface px-2 py-1 text-[10.5px] font-medium text-muted"
+                      >
+                        🇹🇷 Türkiye (+90)
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Spor Dalı & Hizmet Türü -->
+                <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                  <div>
+                    <label for="branch-select" class="block text-xs font-semibold uppercase tracking-wider text-ink">
+                      Spor Dalı
+                    </label>
+                    <select
+                      id="branch-select"
+                      name="branch"
+                      class="clean-select mt-2 w-full rounded-lg border border-borderHairline bg-canvas px-4 py-3 pr-10 text-sm text-ink transition-colors focus:border-ink focus:bg-surface focus:outline-none"
+                    >
+                      <option value="Boks">Boks</option>
+                      <option value="Muay Thai">Muay Thai</option>
+                      <option value="Wushu Kung-Fu (Sanda)">Wushu Kung-Fu (Sanda)</option>
+                      <option value="Kick Boks">Kick Boks</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label for="service-select" class="block text-xs font-semibold uppercase tracking-wider text-ink">
+                      Hizmet Türü
+                    </label>
+                    <select
+                      id="service-select"
+                      name="service"
+                      class="clean-select mt-2 w-full rounded-lg border border-borderHairline bg-canvas px-4 py-3 pr-10 text-sm text-ink transition-colors focus:border-ink focus:bg-surface focus:outline-none"
+                    >
+                      <option value="Toplu Dersler - 2.000 TL / Aylık">Toplu Dersler - 2.000 TL / Aylık</option>
+                      <option value="Birebir Ders - 200 TL / Ders">Birebir Ders - 200 TL / Ders</option>
+                      <option value="Danışmanlık - 500 TL">Danışmanlık - 500 TL</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Eğitmen Seçimi -->
+                <div>
+                  <label for="instructor-select" class="block text-xs font-semibold uppercase tracking-wider text-ink">
+                    Eğitmen Seçimi
+                  </label>
+                  <select
+                    id="instructor-select"
+                    name="instructor"
+                    class="clean-select mt-2 w-full rounded-lg border border-borderHairline bg-canvas px-4 py-3 pr-10 text-sm text-ink transition-colors focus:border-ink focus:bg-surface focus:outline-none"
+                  >
+                    <option value="Cebrail Bülbül">Cebrail Bülbül</option>
+                    <option value="Mikail Bülbül">Mikail Bülbül</option>
+                    <option value="Fark Etmez">Fark Etmez</option>
+                  </select>
+                </div>
+
+                <!-- Ek Not (Opsiyonel) -->
+                <div>
+                  <label for="extra-note" class="block text-xs font-semibold uppercase tracking-wider text-ink">
+                    Ek Not <span class="font-normal normal-case text-muted">(Opsiyonel)</span>
+                  </label>
+                  <textarea
+                    id="extra-note"
+                    name="extraNote"
+                    rows="3"
+                    placeholder="Antrenman saat tercihiniz veya belirtmek istediğiniz kısa not..."
+                    class="mt-2 w-full resize-none rounded-lg border border-borderHairline bg-canvas px-4 py-3 text-sm text-ink placeholder-muted/60 transition-colors focus:border-ink focus:bg-surface focus:outline-none"
+                  ></textarea>
+                </div>
+
+                <!-- Seçili Eğitmen Hattını Anlık Gösteren Bilgi Satırı -->
+                <div class="flex flex-wrap items-center justify-between gap-2 rounded-lg border border-borderHairline bg-stoneSurface px-4 py-3 text-xs">
+                  <span class="font-medium text-muted">Seçili Eğitmen Hattı:</span>
+                  <span id="selected-instructor-line" class="font-semibold text-ink tabular-nums">
+                    Cebrail Bülbül (+90 549 913 06 06)
+                  </span>
+                </div>
+
+                <!-- WhatsApp Gönder Butonu -->
+                <div class="pt-1">
+                  <button
+                    type="submit"
+                    class="inline-flex w-full items-center justify-center gap-2.5 rounded-lg bg-ink px-6 py-4 text-xs font-semibold uppercase tracking-[0.12em] text-surface transition-colors duration-200 hover:bg-inkHover"
+                  >
+                    <svg width="16" height="16" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                    </svg>
+                    <span>WHATSAPP İLE BAŞVURUYU GÖNDER</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 7. ALT BİLGİ (Footer) -->
+  <footer class="border-t border-borderHairline bg-surface py-8">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-5 text-center sm:flex-row sm:px-8 sm:text-left">
+      <p class="text-xs text-muted">
+        © 2026 Şampiyon Kardeşler Spor Kulübü. Tüm hakları saklıdır.
+      </p>
+      <p class="text-xs text-muted">
+        Yazılım &amp; Tasarım: <span class="font-semibold text-bronze">Karahan's Studio</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Zarif Toast Bildirimi -->
+  <div
+    id="toast-container"
+    role="status"
+    aria-live="polite"
+    class="pointer-events-none fixed bottom-6 right-6 z-50 flex translate-y-4 items-center gap-3 rounded-xl border border-borderHairline bg-ink px-5 py-3.5 text-surface opacity-0 shadow-lg transition-all duration-300"
+  >
+    <span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-bronze text-surface">
+      <svg width="12" height="12" class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+    </span>
+    <span id="toast-message" class="text-xs font-medium tracking-wide">
+      İşlem tamamlandı.
+    </span>
+  </div>
+
+  <!-- Uygulama Etkileşimleri & WhatsApp Sohbet Yönlendirmeleri -->
+  <script>
+    // Mobil Menü Açma / Kapama
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIconOpen = document.getElementById('menu-icon-open');
+    const menuIconClose = document.getElementById('menu-icon-close');
+
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.contains('hidden');
+        mobileMenu.classList.toggle('hidden');
+        mobileMenuBtn.setAttribute('aria-expanded', String(isHidden));
+        if (menuIconOpen && menuIconClose) {
+          menuIconOpen.classList.toggle('hidden', isHidden);
+          menuIconClose.classList.toggle('hidden', !isHidden);
+        }
+      });
+
+      document.querySelectorAll('.mobile-nav-link').forEach((link) => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          mobileMenuBtn.setAttribute('aria-expanded', 'false');
+          if (menuIconOpen && menuIconClose) {
+            menuIconOpen.classList.remove('hidden');
+            menuIconClose.classList.add('hidden');
+          }
+        });
+      });
+    }
+
+    // Alt Bildirim (Toast) Gösterimi
+    let toastTimeoutId = null;
+    function showToast(message) {
+      const toastEl = document.getElementById('toast-container');
+      const toastMsgEl = document.getElementById('toast-message');
+      if (!toastEl || !toastMsgEl) return;
+
+      toastMsgEl.textContent = message;
+      toastEl.classList.remove('opacity-0', 'translate-y-4');
+      toastEl.classList.add('opacity-100', 'translate-y-0');
+
+      if (toastTimeoutId) {
+        clearTimeout(toastTimeoutId);
+      }
+
+      toastTimeoutId = setTimeout(() => {
+        toastEl.classList.remove('opacity-100', 'translate-y-0');
+        toastEl.classList.add('opacity-0', 'translate-y-4');
+      }, 2800);
+    }
+
+    // Harici Bağlantıyı Yeni Sekmede Güvenli Açma (window.open + görünmez <a> fallback)
+    function openUrlSafely(url) {
+      let openedWindow = null;
+      try {
+        openedWindow = window.open(url, '_blank', 'noopener,noreferrer');
+      } catch (err) {
+        openedWindow = null;
+      }
+
+      if (!openedWindow || openedWindow.closed || typeof openedWindow.closed === 'undefined') {
+        const fallbackAnchor = document.createElement('a');
+        fallbackAnchor.href = url;
+        fallbackAnchor.target = '_blank';
+        fallbackAnchor.rel = 'noopener noreferrer';
+        fallbackAnchor.style.display = 'none';
+        document.body.appendChild(fallbackAnchor);
+        fallbackAnchor.click();
+        document.body.removeChild(fallbackAnchor);
+      }
+    }
+
+    // Eğitmen Kartındaki WHATSAPP Butonu -> Doğrudan İlgili Eğitmenin Sohbet Ekranını Açma
+    function openDirectWhatsApp(instructorKey) {
+      if (instructorKey === 'mikail') {
+        const mikailUrl =
+          'https://wa.me/905312004646?text=Merhaba%20Mikail%20Hocam%2C%20%C5%9Eampiyon%20Karde%C5%9Fler%20Spor%20Kul%C3%BCb%C3%BC%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.';
+        showToast('Mikail Bülbül WhatsApp sohbet ekranı açılıyor...');
+        openUrlSafely(mikailUrl);
+      } else {
+        const cebrailUrl =
+          'https://wa.me/905499130606?text=Merhaba%20Cebrail%20Hocam%2C%20%C5%9Eampiyon%20Karde%C5%9Fler%20Spor%20Kul%C3%BCb%C3%BC%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.';
+        showToast('Cebrail Bülbül WhatsApp sohbet ekranı açılıyor...');
+        openUrlSafely(cebrailUrl);
+      }
+    }
+
+    // Pano Kopyalama Yardımcısı (Clipboard API + execCommand Fallback)
+    async function writeTextToClipboard(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        try {
+          await navigator.clipboard.writeText(text);
+          return true;
+        } catch (err) {
+          // Kısıtlı iframe ortamlarında yedek yönteme geç
+        }
+      }
+
+      try {
+        const tempTextarea = document.createElement('textarea');
+        tempTextarea.value = text;
+        tempTextarea.setAttribute('readonly', '');
+        tempTextarea.style.position = 'fixed';
+        tempTextarea.style.top = '-9999px';
+        tempTextarea.style.left = '-9999px';
+        document.body.appendChild(tempTextarea);
+        tempTextarea.focus();
+        tempTextarea.select();
+        const successful = document.execCommand('copy');
+        document.body.removeChild(tempTextarea);
+        return successful;
+      } catch (err) {
+        return false;
+      }
+    }
+
+    // ARA Butonu -> Telefon Numarasını Panoya Kopyalama
+    async function copyPhoneNumber(phoneNumber, instructorName, buttonEl) {
+      await writeTextToClipboard(phoneNumber);
+
+      if (buttonEl) {
+        const labelSpan = buttonEl.querySelector('.btn-label');
+        if (labelSpan) {
+          if (buttonEl.dataset.resetTimer) {
+            clearTimeout(Number(buttonEl.dataset.resetTimer));
+          }
+          labelSpan.textContent = 'NUMARA KOPYALANDI ✓';
+          buttonEl.classList.add('border-ink', 'bg-surface');
+
+          const timerId = setTimeout(() => {
+            labelSpan.textContent = 'ARA';
+            buttonEl.classList.remove('border-ink', 'bg-surface');
+          }, 2500);
+          buttonEl.dataset.resetTimer = String(timerId);
+        }
+      }
+
+      showToast(`${instructorName} numarası kopyalandı: ${phoneNumber}`);
+    }
+
+    // Adresi Panoya Kopyalama
+    async function copyAddress() {
+      const addressText = 'Kutlu Mahallesi, Dereboyu Caddesi No: 83 D: 11 (No: 83/B), Mamak / Ankara';
+      await writeTextToClipboard(addressText);
+      showToast('Kulüp adresi panoya kopyalandı.');
+    }
+
+    // Telefon Numarası Otomatik Ülke Algılama ve Rakam Gruplama
+    const COUNTRY_CODES = [
+      { code: '1', label: '🇺🇸 ABD / Kanada (+1)', groups: [3, 3, 4] },
+      { code: '7', label: '🇷🇺 Rusya / Kazakistan (+7)', groups: [3, 3, 2, 2] },
+      { code: '20', label: '🇪🇬 Mısır (+20)', groups: [3, 3, 4] },
+      { code: '27', label: '🇿🇦 Güney Afrika (+27)', groups: [2, 3, 4] },
+      { code: '30', label: '🇬🇷 Yunanistan (+30)', groups: [3, 3, 4] },
+      { code: '31', label: '🇳🇱 Hollanda (+31)', groups: [3, 3, 3] },
+      { code: '32', label: '🇧🇪 Belçika (+32)', groups: [3, 2, 2, 2] },
+      { code: '33', label: '🇫🇷 Fransa (+33)', groups: [3, 2, 2, 2] },
+      { code: '34', label: '🇪🇸 İspanya (+34)', groups: [3, 3, 3] },
+      { code: '36', label: '🇭🇺 Macaristan (+36)', groups: [2, 3, 4] },
+      { code: '39', label: '🇮🇹 İtalya (+39)', groups: [3, 3, 4] },
+      { code: '40', label: '🇷🇴 Romanya (+40)', groups: [3, 3, 3] },
+      { code: '41', label: '🇨🇭 İsviçre (+41)', groups: [2, 3, 2, 2] },
+      { code: '43', label: '🇦🇹 Avusturya (+43)', groups: [3, 3, 4] },
+      { code: '44', label: '🇬🇧 Birleşik Krallık (+44)', groups: [4, 3, 3] },
+      { code: '45', label: '🇩🇰 Danimarka (+45)', groups: [2, 2, 2, 2] },
+      { code: '46', label: '🇸🇪 İsveç (+46)', groups: [2, 3, 2, 2] },
+      { code: '47', label: '🇳🇴 Norveç (+47)', groups: [3, 2, 3] },
+      { code: '48', label: '🇵🇱 Polonya (+48)', groups: [3, 3, 3] },
+      { code: '49', label: '🇩🇪 Almanya (+49)', groups: [3, 3, 2, 2] },
+      { code: '52', label: '🇲🇽 Meksika (+52)', groups: [3, 3, 4] },
+      { code: '55', label: '🇧🇷 Brezilya (+55)', groups: [2, 5, 4] },
+      { code: '61', label: '🇦🇺 Avustralya (+61)', groups: [3, 3, 3] },
+      { code: '81', label: '🇯🇵 Japonya (+81)', groups: [2, 4, 4] },
+      { code: '82', label: '🇰🇷 Güney Kore (+82)', groups: [2, 4, 4] },
+      { code: '86', label: '🇨🇳 Çin (+86)', groups: [3, 4, 4] },
+      { code: '90', label: '🇹🇷 Türkiye (+90)', groups: [3, 3, 2, 2] },
+      { code: '91', label: '🇮🇳 Hindistan (+91)', groups: [5, 5] },
+      { code: '92', label: '🇵🇰 Pakistan (+92)', groups: [3, 7] },
+      { code: '93', label: '🇦🇫 Afganistan (+93)', groups: [2, 3, 4] },
+      { code: '98', label: '🇮🇷 İran (+98)', groups: [3, 3, 4] },
+      { code: '212', label: '🇲🇦 Fas (+212)', groups: [3, 3, 3] },
+      { code: '213', label: '🇩🇿 Cezayir (+213)', groups: [3, 2, 2, 2] },
+      { code: '216', label: '🇹🇳 Tunus (+216)', groups: [2, 3, 3] },
+      { code: '351', label: '🇵🇹 Portekiz (+351)', groups: [3, 3, 3] },
+      { code: '353', label: '🇮🇪 İrlanda (+353)', groups: [2, 3, 4] },
+      { code: '355', label: '🇦🇱 Arnavutluk (+355)', groups: [2, 3, 4] },
+      { code: '358', label: '🇫🇮 Finlandiya (+358)', groups: [2, 3, 2, 2] },
+      { code: '359', label: '🇧🇬 Bulgaristan (+359)', groups: [2, 3, 4] },
+      { code: '380', label: '🇺🇦 Ukrayna (+380)', groups: [2, 3, 2, 2] },
+      { code: '381', label: '🇷🇸 Sırbistan (+381)', groups: [2, 3, 4] },
+      { code: '385', label: '🇭🇷 Hırvatistan (+385)', groups: [2, 3, 4] },
+      { code: '387', label: '🇧🇦 Bosna-Hersek (+387)', groups: [2, 3, 3] },
+      { code: '420', label: '🇨🇿 Çekya (+420)', groups: [3, 3, 3] },
+      { code: '961', label: '🇱🇧 Lübnan (+961)', groups: [2, 3, 3] },
+      { code: '962', label: '🇯🇴 Ürdün (+962)', groups: [1, 4, 4] },
+      { code: '963', label: '🇸🇾 Suriye (+963)', groups: [3, 3, 3] },
+      { code: '964', label: '🇮🇶 Irak (+964)', groups: [3, 3, 4] },
+      { code: '965', label: '🇰🇼 Kuveyt (+965)', groups: [4, 4] },
+      { code: '966', label: '🇸🇦 Suudi Arabistan (+966)', groups: [2, 3, 4] },
+      { code: '971', label: '🇦🇪 BAE (+971)', groups: [2, 3, 4] },
+      { code: '972', label: '🇮🇱 İsrail (+972)', groups: [2, 3, 4] },
+      { code: '974', label: '🇶🇦 Katar (+974)', groups: [4, 4] },
+      { code: '992', label: '🇹🇯 Tacikistan (+992)', groups: [2, 3, 4] },
+      { code: '993', label: '🇹🇲 Türkmenistan (+993)', groups: [2, 6] },
+      { code: '994', label: '🇦🇿 Azerbaycan (+994)', groups: [2, 3, 2, 2] },
+      { code: '995', label: '🇬🇪 Gürcistan (+995)', groups: [3, 2, 2, 2] },
+      { code: '996', label: '🇰🇬 Kırgızistan (+996)', groups: [3, 3, 3] },
+      { code: '998', label: '🇺🇿 Özbekistan (+998)', groups: [2, 3, 2, 2] },
+    ].sort((a, b) => b.code.length - a.code.length);
+
+    function groupNationalDigits(digits, pattern) {
+      if (!digits) return '';
+      const chunks = [];
+      let cursor = 0;
+
+      for (let i = 0; i < pattern.length && cursor < digits.length; i += 1) {
+        chunks.push(digits.slice(cursor, cursor + pattern[i]));
+        cursor += pattern[i];
+      }
+
+      while (cursor < digits.length) {
+        chunks.push(digits.slice(cursor, cursor + 3));
+        cursor += 3;
+      }
+
+      return chunks.join(' ');
+    }
+
+    function formatPhoneWithCountry(rawInput) {
+      const cleaned = rawInput.replace(/[^\d+]/g, '');
+      if (!cleaned) {
+        return { formatted: '', badge: '🇹🇷 Türkiye (+90)' };
+      }
+
+      let isInternational = false;
+      let digits = '';
+
+      if (cleaned.startsWith('+')) {
+        isInternational = true;
+        digits = cleaned.slice(1).replace(/\+/g, '');
+      } else if (cleaned.startsWith('00')) {
+        isInternational = true;
+        digits = cleaned.slice(2).replace(/\+/g, '');
+      } else {
+        digits = cleaned.replace(/\+/g, '');
+      }
+
+      // Uluslararası (+ veya 00 ile başlayan) numaralar
+      if (isInternational) {
+        if (!digits) {
+          return { formatted: '+', badge: '🌍 Ülke Kodu...' };
+        }
+
+        const matchedCountry = COUNTRY_CODES.find((item) => digits.startsWith(item.code));
+        if (matchedCountry) {
+          let national = digits.slice(matchedCountry.code.length);
+          if (national.startsWith('0')) {
+            national = national.replace(/^0+/, '');
+          }
+          const maxLen = matchedCountry.code === '90' ? 10 : 12;
+          national = national.slice(0, maxLen);
+          const grouped = groupNationalDigits(national, matchedCountry.groups);
+          return {
+            formatted: grouped ? `+${matchedCountry.code} ${grouped}` : `+${matchedCountry.code}`,
+            badge: matchedCountry.label,
+          };
+        }
+
+        // Kullanıcı henüz 2 veya 3 haneli ülke kodunun ilk rakamlarını yazıyorsa
+        const isPartialPrefix = COUNTRY_CODES.some((item) => item.code.startsWith(digits));
+        if (isPartialPrefix && digits.length <= 3) {
+          return {
+            formatted: `+${digits}`,
+            badge: '🌍 Ülke Kodu...',
+          };
+        }
+
+        // Listede yer almayan diğer uluslararası kodlar için genel 3-3-4 gruplama
+        const fallbackCode = digits.slice(0, 3);
+        const fallbackNational = digits.slice(3, 15);
+        const fallbackGrouped = groupNationalDigits(fallbackNational, [3, 3, 2, 2]);
+        return {
+          formatted: fallbackGrouped ? `+${fallbackCode} ${fallbackGrouped}` : `+${fallbackCode}`,
+          badge: `🌐 Uluslararası (+${fallbackCode})`,
+        };
+      }
+
+      // Tek başına '0' girildiğinde kullanıcının '00' (uluslararası) veya '05' (Türkiye) yazmasına izin ver
+      if (digits === '0') {
+        return { formatted: '0', badge: '🇹🇷 Türkiye (+90)' };
+      }
+
+      // Yerel Türkiye numarası (05..., 5..., 905...) -> Otomatik +90 ekle ve 3-3-2-2 ayır
+      let trNational = digits;
+      if (trNational.startsWith('90') && trNational.length > 2) {
+        trNational = trNational.slice(2);
+      }
+      if (trNational.startsWith('0')) {
+        trNational = trNational.replace(/^0+/, '');
+      }
+      trNational = trNational.slice(0, 10);
+
+      const trGrouped = groupNationalDigits(trNational, [3, 3, 2, 2]);
+      return {
+        formatted: trGrouped ? `+90 ${trGrouped}` : '+90',
+        badge: '🇹🇷 Türkiye (+90)',
+      };
+    }
+
+    const userPhoneField = document.getElementById('user-phone');
+    const countryBadgeEl = document.getElementById('country-badge');
+
+    if (userPhoneField && countryBadgeEl) {
+      userPhoneField.addEventListener('input', () => {
+        const currentVal = userPhoneField.value;
+        const selectionStart = userPhoneField.selectionStart || 0;
+
+        // İmleçten önceki rakam ve '+' sayısını koruyarak imleç sıçramasını önle
+        const tokensBeforeCaret = currentVal.slice(0, selectionStart).replace(/[^\d+]/g, '').length;
+
+        const { formatted, badge } = formatPhoneWithCountry(currentVal);
+        userPhoneField.value = formatted;
+        countryBadgeEl.textContent = badge;
+
+        // Eğer kullanıcı yerel rakamla (örn. 5 veya 05) başladıysa otomatik eklenen '+90 ' sonrasına konumla
+        const startedWithoutPlus =
+          !currentVal.trim().startsWith('+') &&
+          !currentVal.trim().startsWith('00') &&
+          formatted.startsWith('+90 ');
+
+        if (startedWithoutPlus && selectionStart === currentVal.length) {
+          userPhoneField.setSelectionRange(formatted.length, formatted.length);
+          return;
+        }
+
+        let counted = 0;
+        let nextCaret = formatted.length;
+        for (let i = 0; i < formatted.length; i += 1) {
+          if (/[\d+]/.test(formatted[i])) {
+            counted += 1;
+          }
+          if (counted >= tokensBeforeCaret) {
+            nextCaret = i + 1;
+            break;
+          }
+        }
+        userPhoneField.setSelectionRange(nextCaret, nextCaret);
+      });
+    }
+
+    // Seçili Eğitmen Hattı Bilgisini Canlı Güncelleme
+    const instructorSelectEl = document.getElementById('instructor-select');
+    const selectedInstructorLine = document.getElementById('selected-instructor-line');
+
+    function updateSelectedInstructorLine() {
+      if (!instructorSelectEl || !selectedInstructorLine) return;
+      const choice = instructorSelectEl.value;
+      if (choice === 'Mikail Bülbül') {
+        selectedInstructorLine.textContent = 'Mikail Bülbül (+90 531 200 46 46)';
+      } else {
+        selectedInstructorLine.textContent = 'Cebrail Bülbül (+90 549 913 06 06)';
+      }
+    }
+
+    if (instructorSelectEl) {
+      instructorSelectEl.addEventListener('change', updateSelectedInstructorLine);
+      updateSelectedInstructorLine();
+    }
+
+    // Branş Kartından Branşı Seçip Kayıt Formuna Kaydırma
+    function selectBranchAndScroll(branchName) {
+      const branchSelect = document.getElementById('branch-select');
+      const formSection = document.getElementById('kayit-formu');
+      if (branchSelect) {
+        branchSelect.value = branchName;
+      }
+      if (formSection) {
+        formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      showToast(`${branchName} branşı seçildi.`);
+    }
+
+    // Hizmet Kartından Paketi Seçip Kayıt Formuna Kaydırma
+    function selectServiceAndScroll(serviceLabel) {
+      const serviceSelect = document.getElementById('service-select');
+      const formSection = document.getElementById('kayit-formu');
+      if (serviceSelect) {
+        serviceSelect.value = serviceLabel;
+      }
+      if (formSection) {
+        formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      showToast(`Seçilen hizmet: ${serviceLabel}`);
+    }
+
+    // WhatsApp Kayıt Formu Gönderimi -> Seçilen Eğitmene Hazır Mesajla Sohbet Açma
+    const whatsappForm = document.getElementById('whatsapp-form');
+    if (whatsappForm) {
+      whatsappForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const fullNameInput = document.getElementById('full-name');
+        const userPhoneInput = document.getElementById('user-phone');
+        const nameError = document.getElementById('name-error');
+        const branchSelect = document.getElementById('branch-select');
+        const serviceSelect = document.getElementById('service-select');
+        const instructorSelect = document.getElementById('instructor-select');
+        const extraNoteInput = document.getElementById('extra-note');
+
+        const fullName = fullNameInput ? fullNameInput.value.trim() : '';
+
+        if (!fullName) {
+          if (nameError) nameError.classList.remove('hidden');
+          if (fullNameInput) {
+            fullNameInput.classList.add('border-red-500');
+            fullNameInput.focus();
+          }
+          return;
+        }
+
+        if (nameError) nameError.classList.add('hidden');
+        if (fullNameInput) fullNameInput.classList.remove('border-red-500');
+
+        const rawPhoneVal = userPhoneInput ? userPhoneInput.value.trim() : '';
+        const phoneNumberText = rawPhoneVal && rawPhoneVal !== '+' && rawPhoneVal !== '0' ? rawPhoneVal : '';
+        const selectedBranch = branchSelect ? branchSelect.value : 'Boks';
+        const selectedService = serviceSelect ? serviceSelect.value : 'Toplu Dersler - 2.000 TL / Aylık';
+        const selectedInstructor = instructorSelect ? instructorSelect.value : 'Cebrail Bülbül';
+        const extraNoteText = extraNoteInput ? extraNoteInput.value.trim() : '';
+
+        // Cebrail Bülbül veya Fark Etmez -> 905499130606 | Mikail Bülbül -> 905312004646
+        const targetPhone = selectedInstructor === 'Mikail Bülbül' ? '905312004646' : '905499130606';
+        const targetInstructorLabel =
+          selectedInstructor === 'Mikail Bülbül' ? 'Mikail Bülbül' : 'Cebrail Bülbül';
+
+        const messageLines = [
+          'Merhaba, Şampiyon Kardeşler Spor Kulübü web sitesi üzerinden ön kayıt başvurusu yapmak istiyorum.',
+          `• Ad Soyad: ${fullName}`,
+          `• Telefon: ${phoneNumberText || 'Belirtilmedi'}`,
+          `• Branş: ${selectedBranch}`,
+          `• Hizmet Türü: ${selectedService}`,
+          `• Tercih Edilen Eğitmen: ${selectedInstructor}`,
+        ];
+
+        if (extraNoteText) {
+          messageLines.push(`• Ek Not: ${extraNoteText}`);
+        }
+
+        const encodedMessage = encodeURIComponent(messageLines.join('\n'));
+        const whatsappUrl = `https://wa.me/${targetPhone}?text=${encodedMessage}`;
+
+        showToast(`${targetInstructorLabel} WhatsApp sohbet ekranı açılıyor...`);
+        openUrlSafely(whatsappUrl);
+      });
+    }
+  </script>
+</body>
+</html>
